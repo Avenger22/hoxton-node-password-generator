@@ -93,6 +93,7 @@ function generatePassword(): void {
   );
 
   const generatedCharacters: (string | number)[] = [...requiredCharacters, ...remainingCharacters];
+  
   const shuffledChars: (string | number)[] = shuffleArray(generatedCharacters);
 
   const password: string = shuffledChars.join("");
